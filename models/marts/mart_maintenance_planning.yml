@@ -1,0 +1,26 @@
+models:
+  - name: mart_maintenance_planning
+    description: This model is designed to facilitate maintenance planning by providing insights into equipment status, typical service times, and maintenance priorities based on upcoming due dates.
+    columns:
+      - name: equipment_id
+        description: A unique identifier for each piece of equipment.
+        data_tests:
+          - unique
+          - not_null
+      - name: asset_type
+        description: The category or type of the asset.
+        data_tests:
+          - not_null
+      - name: next_maintenance_due
+        description: The scheduled date for the next maintenance of the equipment.
+        data_tests:
+          - not_null
+      - name: typical_service_time
+        description: The average duration of service tickets for the equipment.
+      - name: service_success_rate
+        description: The rate at which services are successfully completed for the equipment.
+      - name: maintenance_priority
+        description: The priority level for maintenance based on the proximity of the next maintenance due date, categorized as 'Urgent', 'Planning', or 'On Track'.
+        data_tests:
+          - accepted_values:
+              values: ['Urgent', 'Planning', 'On Track']
