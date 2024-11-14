@@ -1,0 +1,5 @@
+equipment_id,asset_type,installation_date,last_maintenance_date,maintenance_interval_days,location_id,status
+EQ123,Freezer,2023-01-15,2024-01-15,90,LOC001,Active
+EQ456,Cooler,2023-02-20,2024-01-15,60,LOC002,Active
+EQ789,Refrigerator,2023-03-10,2024-01-16,90,LOC001,Active
+EQ234,Freezer,2023-04-05,2024-01-16,90,LOC003,Active
